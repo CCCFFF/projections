@@ -4,7 +4,8 @@ RSpec.describe "revenues/new", type: :view do
   before(:each) do
     assign(:revenue, Revenue.new(
       :category => "MyString",
-      :amount => 1.5
+      :amount => 1.5,
+      :date => '2/10/2015'
     ))
   end
 

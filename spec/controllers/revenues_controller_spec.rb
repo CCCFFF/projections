@@ -24,11 +24,19 @@ RSpec.describe RevenuesController, type: :controller do
   # Revenue. As you add validations to Revenue, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+      date: '2/10/2015',
+      category: 'pay check',
+      amount: 2000.00
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+      {
+      time: '2/10/2015',
+      type: 'pay',
+      cost: 2000.00
+    }
   }
 
   # This should return the minimal set of values that should be in the session

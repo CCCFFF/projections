@@ -5,11 +5,13 @@ RSpec.describe "revenues/index", type: :view do
     assign(:revenues, [
       Revenue.create!(
         :category => "Category",
-        :amount => 1.5
+        :amount => 1.5,
+        :date => '2/10/2015'
       ),
       Revenue.create!(
         :category => "Category",
-        :amount => 1.5
+        :amount => 1.5,
+        :date => '2/10/2015'
       )
     ])
   end
