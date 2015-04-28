@@ -25,7 +25,7 @@ RSpec.describe RevenuesController, type: :controller do
   # adjust the attributes here as well.
   let(:valid_attributes) {
     {
-      date: '2/10/2015',
+      date: '2015/2/10',
       category: 'pay check',
       amount: 2000.00
     }
@@ -33,7 +33,7 @@ RSpec.describe RevenuesController, type: :controller do
 
   let(:invalid_attributes) {
       {
-      time: '2/10/2015',
+      time: '2015/2/10',
       type: 'pay',
       cost: 2000.00
     }

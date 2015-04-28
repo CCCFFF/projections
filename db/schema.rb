@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150428151257) do
+ActiveRecord::Schema.define(version: 20150428165736) do
+
+  create_table "expenses", force: true do |t|
+    t.date     "date"
+    t.string   "category"
+    t.float    "amount"
+    t.string   "revenue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "goals", force: true do |t|
+    t.date     "start_date"
+    t.date     "end_date"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "revenues", force: true do |t|
     t.string   "category"
