@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @revenue.category %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @revenue.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @revenue.amount %>
+</p>
+
+<%= link_to 'Edit', edit_revenue_path(@revenue) %> |
+<%= link_to 'Back', revenues_path %>
